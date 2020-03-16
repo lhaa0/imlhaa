@@ -1,0 +1,74 @@
+
+$primary : #566892;
+html{
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+body{
+  margin: 0
+}
+
+#app{
+  font-family: metropolis;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background: $primary;
+  height: 100vh;
+  max-height: 100vh;
+
+  #nav{
+    padding: 38px;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-title{
+      div.title  {
+        font-size: 2rem;
+        
+        label{
+          font-weight: 900;
+        }
+      }
+    }
+
+    .nav-group{
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      &:before{
+        content: '';
+        background: url('assets/img/pojok.png') no-repeat;
+        z-index: 0;
+        position: absolute;
+        background-size: auto;
+        width: 509px;
+        height: 39%;
+        right: 0;
+      }
+
+      div {
+        z-index: 1;
+
+        a {
+          background: $primary;
+          font-weight: bold;
+          color: #000;
+          text-decoration: none;
+          padding: 8px;
+          border-radius: 4px;
+          color: #fff;
+
+          &.router-link-exact-active{
+            background: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
