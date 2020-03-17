@@ -9,7 +9,7 @@
           <router-link to="/">Home</router-link>
         </div>
         <div>
-          <router-link to="/about">Profile</router-link>
+          <router-link to="/profile">Profile</router-link>
         </div>
       </div>
     </div>

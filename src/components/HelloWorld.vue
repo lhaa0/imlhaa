@@ -1,8 +1,8 @@
 <template>
   <div class="home-container">
     <div class="home">
-      <img class="bg-main" src="../assets/img/bg-main2.png">
-      <img class="bg-main" src="../assets/img/bg-main1.png">
+      <img class="bg-main second" src="../assets/img/bg-main2.png">
+      <img class="bg-main first" src="../assets/img/bg-main1.png">
       <img class="main-person" src="../assets/img/icon.png">
     </div>
     <div class="hello">
@@ -44,6 +44,25 @@ export default class HelloWorld extends Vue {
       }
       img.bg-main{
         width: 56%;
+
+        &.first {
+          animation: bg-main1 7s
+          ease-out
+          0s
+          alternate
+          infinite
+          none
+          running;
+        }
+        &.second {
+          animation: bg-main1 7s
+          ease-out
+          0s
+          alternate-reverse
+          infinite
+          none
+          running;
+        }
       }
     }
 
@@ -61,4 +80,19 @@ export default class HelloWorld extends Vue {
       }
     }
   }
+
+  @keyframes bg-main1 {
+          25%{
+            transform: rotate(10deg);
+          }
+          50%{
+            transform: rotate(20deg);
+          }
+          75%{
+            transform: rotate(10deg);
+          }
+          100%{
+            transform: rotate(0deg);
+          }
+        }
 </style>
