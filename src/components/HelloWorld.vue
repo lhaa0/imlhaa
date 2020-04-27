@@ -9,7 +9,7 @@
       <span>Im Says</span>
       <div>{{ checkMessage() }}</div>
       <p>Join My Discord Server!</p>
-      <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark&username=lhaa" allowtransparency="true" frameborder="0"></iframe>
+      <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark" allowtransparency="true" frameborder="0"></iframe>
     </div>
   </div>
 </template>
