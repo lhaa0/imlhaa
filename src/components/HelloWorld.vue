@@ -9,7 +9,9 @@
       <span>Im Says</span>
       <div>{{ checkMessage() }}</div>
       <p>Join My Discord Server!</p>
-      <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+      <div class="discord-widget">
+        <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -85,10 +87,18 @@ export default class HelloWorld extends Vue {
         margin: 0;
       }
 
-      iframe {
-        margin-top : 1rem;
+      div.discord-widget {
         width: 100%;
-        height: 55vh;
+        height: 50vh;
+
+        iframe{
+          height: 50vh;
+          width: 38%;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 2rem;
+          right: 1rem;
+        }
       }
     }
   }
