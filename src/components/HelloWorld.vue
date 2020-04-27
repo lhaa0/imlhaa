@@ -7,8 +7,9 @@
     </div>
     <div class="hello">
       <span>Im Says</span>
-      <div>{{ msg }}</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, excepturi? Amet mollitia nihil nemo at asperiores, quibusdam quaerat, saepe numquam illum deserunt, suscipit quia accusantium enim odio ullam aperiam doloremque!</p>
+      <div>{{ checkMessage() }}</div>
+      <p>Join My Discord Server!</p>
+      <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark&username=lhaa" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
     </div>
   </div>
 </template>
@@ -21,6 +22,11 @@ export default class HelloWorld extends Vue {
   private msgArr = ['Hello', 'Hay..', 'Hee...', 'Hallo']
   public msg = "Message"
 
+  i = 0;
+  checkMessage(){
+    this.msg = this.msgArr[this.i]
+    return this.msg
+  }
 }
 </script>
 
@@ -68,7 +74,7 @@ export default class HelloWorld extends Vue {
 
     .hello {
       width: 50%;
-      margin-top: 6rem;
+      margin-top: 2rem;
       font-size: 2rem;
 
       div {
@@ -77,6 +83,11 @@ export default class HelloWorld extends Vue {
 
       p{
         margin: 0;
+      }
+
+      iframe {
+        margin-top : 1rem;
+        width: 100%;
       }
     }
   }
