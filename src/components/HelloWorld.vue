@@ -74,7 +74,7 @@ export default class HelloWorld extends Vue {
 
     .hello {
       width: 50%;
-      margin-top: 2rem;
+      margin-top: 0vh;
       font-size: 2rem;
 
       div {
