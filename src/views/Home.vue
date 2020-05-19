@@ -7,15 +7,13 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import { isMobileOnly } from 'mobile-device-detect'
 import Vue from 'vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
-
+  components: { HelloWorld }
+} 
 
 </script>
 <style scoped lang="scss">
