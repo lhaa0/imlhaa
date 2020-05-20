@@ -9,8 +9,8 @@
     </div>
     <div class="hello">
       <div class="discord-widget">
-        <span>Im Says</span>
-        <div>{{ checkMessage() }}</div>
+        <span>I Say</span>
+        <div>"{{ checkMessage() }}"</div>
         <!-- <p>Join My Discord Server!</p>
         <iframe src="https://discordapp.com/widget?id=695980892291858443&theme=dark" allowtransparency="true" frameborder="0"></iframe> -->
       </div>
